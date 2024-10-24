@@ -36,4 +36,4 @@ require (
 	gotest.tools v2.2.0+incompatible
 )
 
-replace github.com/cameronstanley/go-reddit v0.0.0-20170423222116-4bfac7ea95af => ./pkg/reddit
+replace github.com/cameronstanley/go-reddit => /vercel/path0/pkg/reddit

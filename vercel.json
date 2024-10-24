@@ -5,7 +5,11 @@
       "src": "api/index.go",
       "use": "@vercel/go",
       "config": {
-        "prebuild": "go mod tidy"
+        "prebuild": [
+          "mkdir -p /vercel/path0/pkg",
+          "cp -r pkg/reddit /vercel/path0/pkg/",
+          "go mod tidy"
+        ]
       }
     }
   ],
