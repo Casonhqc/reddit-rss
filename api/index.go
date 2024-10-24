@@ -4,7 +4,6 @@ import (
 	"net/http"
 	"os"
 	"time"
-
 	"github.com/trashhalo/reddit-rss/pkg/client"
 	"golang.org/x/oauth2"
 )
@@ -16,7 +15,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	var token *oauth2.Token
 	baseApiURL := "https://www.reddit.com"
 
-	// 配置OAuth (如果提供了环境变量)
+	// 配置OAuth2 (如果提供了环境变量)
 	oauthClientID := os.Getenv("OAUTH_CLIENT_ID")
 	if oauthClientID != "" {
 		oauthClientSecret := os.Getenv("OAUTH_CLIENT_SECRET")
