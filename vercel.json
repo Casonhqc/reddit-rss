@@ -8,6 +8,7 @@
         "prebuild": [
           "mkdir -p /vercel/path0/pkg",
           "cp -r pkg/reddit /vercel/path0/pkg/",
+          "go mod download",
           "go mod tidy"
         ]
       }
